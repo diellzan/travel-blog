@@ -1,37 +1,50 @@
 <template>
-    <div class="city-container">
-        <div v-if="loading">
-        <Loading />
+  <div class="city-container">
+    <div v-if="loading">
+      <Loading />
+    </div>
+    <div class="container-fluid cityContainer">
+      <div class="cityHero">
+        <div class="imgShadow">
+          <img
+            :src="require('../../../assets/blogPhotos/gastronomyFull.jpg')"
+            :alt="currentCity._id"
+            :onerror="replaceByDefault"
+            class="cityMainImage"
+          />
         </div>
-        <div class="container-fluid cityContainer">
-            <div class="cityHero">
-                <div class="imgShadow">
-                    <img :src="require('../../../assets/blogPhotos/gastronomyFull.jpg')" 
-                        :alt="currentCity._id" :onerror="replaceByDefault" class="cityMainImage"/>
-                </div>
-                <h1 class="cityName">Gastronomy</h1>
+        <h1 class="cityName">Gastronomy</h1>
+      </div>
+      <div class="descriptionContainer">
+        <h2>
+          Experience modern local dishes, refined beverages and breathtaking
+          views from {{ cityName }}'s beautiful restaurants, lounges and
+          lobbies.
+        </h2>
+      </div>
+      <div class="container-fluid citySubmenu">
+        <h2>Visit {{ cityName }}</h2>
+      </div>
+      <div class="cityMainContent">
+        <div class="cityTopPlacesContainer">
+          <!-- 1 -->
+          <div class="col col-lg-5 col-12 cityTopPlacesBox">
+            <div class="container boxContainer">
+              <h2>{{ cityName }}'s top Restaurants and Bars!</h2>
+              <hr />
+              <h4>
+                Experience modern local dishes and breathtaking views at our
+                favourite restaurant, {{ cityName }}'s best restaurant, where
+                the menu is created by executive and professional chefs.
+              </h4>
+              <p>Location: {{ cityName }}</p>
+              <button class="btn seeMoreBtn">See More</button>
             </div>
-            <div class="descriptionContainer">
-                <h2>Experience modern local dishes, refined beverages and breathtaking
-                    views from {{ cityName }}'s beautiful restaurants, lounges and
-                    lobbies.
-                </h2>
-            </div>
-            <div class="container-fluid citySubmenu">
-                <h2>Visit {{ cityame }}'s top Restaurants and Bars!</h2>
-                <hr />
-                <h4>
-                    Experience modern local dishes and breathtaking views at our
-                    favourite restaurant, {{ cityName }}'s best restaurant, where
-                    the menu is created by executive and professional chefs.
-                </h4>
-                <p>Location: {{ cityName }}</p>
-                <button class="btn seeMoreBtn">See More</button>
-            </div>
-        </div>
-        <div class="col col-lg-5 col-12 cityTopPlacesBox">
+          </div>
+          <div class="col col-lg-5 col-12 cityTopPlacesBox">
             <div class="container boxContainerImg">
-                <img :src="require('../../../assets/blogPhotos/gastronomy1.jpg')"
+              <img
+                :src="require('../../../assets/blogPhotos/gastronomy1.jpg')"
                 :alt="currentCity.id"
                 :onerror="replaceByDefault"
                 class="topPlacesImg"
@@ -63,6 +76,7 @@
             </div>
           </div>
         </div>
+      </div>
       <div class="">
         <TreeLogo />
       </div>
@@ -74,6 +88,8 @@
         </h2>
         <h5>― Italo Calvino, Invisible Cities</h5>
       </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -292,5 +308,3 @@ export default {
   }
 }
 </style>
-
-     
