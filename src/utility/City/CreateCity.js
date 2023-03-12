@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const createCity = async (PostBOdy) => {
+const createCity = async (PostBody) => {
      // const token = await getAuth().currentUser.getIdToken();
     const apiCaller = axios.create({
         baseURL: "http://localhost:1000/",
@@ -10,3 +10,5 @@ const createCity = async (PostBOdy) => {
     });
     return data;
 }
+
+export default createCity;
