@@ -40,7 +40,7 @@ export default{
         },
     },
     methods: {
-        removePost() {
+        removePost(postId) {
             this.$store.dispatch("removePost", postId).then(() => {
                 window.location.reload();
             });
