@@ -13,7 +13,7 @@ import { Router } from 'express';
                 </div>
                 <Dropzone :postId="this.$route.params.id" :initialFiles="post.files"/>
             </div>
-            <router-link class="goToPosts" :to="{ name: 'Posts' }">Go to Posts</router-link>
+            <router-link class="goToPosts" :to="{ name: '_Posts' }">Go to Posts</router-link>
         </div>
     </section>
 </template>

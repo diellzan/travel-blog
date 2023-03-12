@@ -56,7 +56,7 @@ export default {
             return Math.floor(Math.random() * (5 - 1 + 1)) + 1; //multiply to generate random number between 0,10
         },
     },
-    name: "Cities",
+    name: "_Cities",
 };
 </script>
 <style lang="scss" scoped>

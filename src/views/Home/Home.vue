@@ -45,7 +45,7 @@
   import Arrow from "../../assets/Icons/arrow-right-light.svg";
   
   export default {
-    name: "Home",
+    name: "_Home",
     components: {
       KosovaMap,
       Arrow,

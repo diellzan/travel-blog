@@ -34,7 +34,7 @@
   import UsersDashboard from "./Users/UsersDashboard.vue";
   
   export default {
-    name: "Admin",
+    name: "_Admin",
   
     components: {
       AdminDashboard,

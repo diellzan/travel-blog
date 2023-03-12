@@ -43,7 +43,7 @@
   import "firebase/auth";
   
   export default {
-    name: "Login",
+    name: "_Login",
   
     components: {
       email,

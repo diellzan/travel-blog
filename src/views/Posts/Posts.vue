@@ -21,7 +21,7 @@ export default {
     components: {
         Card,
     },
-    name: "blogs",
+    name: "_blogs",
     computed: {
         isAdmin(){
             return this.$store.state.users.isAdmin;

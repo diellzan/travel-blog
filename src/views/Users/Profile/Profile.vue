@@ -40,7 +40,7 @@
   import adminIcon from "../../../assets/Icons/user-crown-light.svg";
   
   export default {
-    name: "Profile",
+    name: "_Profile",
   
     components: {
       Modal,
