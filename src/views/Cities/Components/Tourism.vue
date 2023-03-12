@@ -6,7 +6,7 @@
 <script>
 export default{
     name: "Tourism",
-    comments: {},
+    components: {},
 };
 </script>
 <style lang="scss" scoped></style>
