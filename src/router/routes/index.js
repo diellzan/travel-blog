@@ -12,6 +12,6 @@ export default[
     {
         path: "/map",
         name: "KosovaPath",
-        component: () => import(/*webpackChunkName:"mapPath"*/"../../views/KosovaMap/MapPath.vue"),
+        component: () => import(/*webpackChunkName:"mapPath"*/"../../components/KosovaMap/MapPath.vue"),
     },
 ];
