@@ -10,5 +10,5 @@ module.exports = {
     parserOptions: {
       parser: "@babel/eslint-parser"
     },
-    rules: {}
+    rules: {'vue/multi-word-component-names': 'off'}
 }
