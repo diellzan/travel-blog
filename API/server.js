@@ -6,7 +6,7 @@ import helmet from "helmet";
 import PostRoute from "./api/routes/PostRoute";
 import fileUpload from "express-fileupload";
 
-const connectionString = "mongodb://localhost:27017/Travel_Test";
+const connectionString = "mongodb://127.0.0.1/Travel_Test";
 
 mongoose.connect(connectionString).then(() => {
     console.log("Connected to mongodb on: " + connectionString);
