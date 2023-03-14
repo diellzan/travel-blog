@@ -4,7 +4,7 @@
       <div v-if="isLoading || isFetching" id="loadedClass">
         <div class="logoSet">
           <transition name="slide" mode="out-in" appear>
-            <Logo />
+            <img src="./assets/Logo.svg" alt="Logo" >
           </transition>
         </div>
       </div>
@@ -19,14 +19,14 @@
 import Navigation from "./components/Navigation.vue";
 import Footer from "./components/Footer.vue";
 import "firebase/auth";
-import Logo from "../src/assets/Logo.svg";
+//import Logo from "../src/assets/Logo.svg";
 
 export default{
   name: "app",
   components: {
     appNavigation: Navigation,
     appFooter: Footer,
-    Logo,
+    //Logo,
   },
   data() {
     return{
