@@ -65,13 +65,13 @@ export default{
       this.navigation = false;
     },
     keypress(e) {
-      if(e.key === "t"){
+      if(e.key === 't'){
         this.toggle()
       }
     },
     toggle() {
       if(this.mode === "dark"){
-        this.mode= "light"
+        this.mode = "light"
       } else {
         this.mode = "dark"
       }
@@ -110,7 +110,7 @@ export default{
 }
 
 .dark div{
-  background-color: #303030 !important;
+  background-color: #303030;
 }
 
 .dark p, h1, h2, h3, h4, h5{
@@ -120,12 +120,21 @@ export default{
 .dark header{
   background-color: #303030 !important;
 }
+.dark body{
+  background-color: #303030;
+}
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $primary-font, sans-serif;
+}
+header {
+  border-bottom: 2px solid #1a4531 !important;
+}
+body {
+  background-color: #faf7f1 !important;
 }
 
 .app{
